@@ -124,7 +124,7 @@ module Crecto
         else
           q.push "DISTINCT #{query.distincts}"
         end
-        
+
         q.push "FROM #{queryable.table_name}"
         q.push joins(queryable, query, params) if query.joins.any?
         q.push wheres(queryable, query, params) if query.wheres.any?
