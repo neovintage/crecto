@@ -1,4 +1,6 @@
 require "pg"
+require "mysql"
+
 require "spec"
 require "../src/crecto"
 

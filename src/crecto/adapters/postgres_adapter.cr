@@ -112,7 +112,6 @@ module Crecto
         {fields: query_hash.keys.join(", "), values: query_hash.values}
       end
 
-      
     end
   end
 end
