@@ -163,6 +163,7 @@ module Crecto
         q = delete_begin(queryable.table_name)
         q.push wheres(queryable, query, params) if query.wheres.any?
         q.push or_wheres(queryable, query, params) if query.or_wheres.any?
+        puts "in base adapter"
 
         execute(position_args(q.join(" ")), params, tx)
       end
